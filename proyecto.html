@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulador Web de Crisis Económica</title>
+
+<link rel="stylesheet" href="ctiloc.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="titulo">
+
+        <h3>UNIVERSIDAD MAYOR DE SAN ANDRÉS</h3>
+        <h3>FACULTAD DE CIENCIAS PURAS Y NATURALES</h3>
+        <h3>CARRERA DE INFORMÁTICA</h3>
+        <h3>PROGRAMACIÓN WEB I</h3>
+
+        <hr>
+
+        <h1> Simulador Web de Crisis Económica</h1>
+
+    </div>
+
+    <nav>
+
+        <a href="#inicio">Inicio</a>
+        <a href="#contexto">Contexto</a>
+        <a href="#carburante">Carburante</a>
+        <a href="#transporte">Transporte</a>
+        <a href="#compras">Compras</a>
+        <a href="#casos">Casos</a>
+        <a href="#conclusiones">Conclusiones</a>
+        <a href="#creditos">Créditos</a>
+
+    </nav>
+
+</header>
+
+<main id="inicio">
+
+    <section class="card bienvenida">
+
+        <h2> Inicio</h2>
+
+        <p>
+            Este proyecto permite analizar distintos escenarios
+            relacionados con el abastecimiento de carburantes,
+            costos de transporte y compras familiares mediante
+            simuladores interactivos desarrollados con HTML,
+            CSS y JavaScript.
+        </p>
+
+    </section>
+
+    <section class="card" id="contexto">
+
+        <h2> Contexto</h2>
+
+        <p>
+            En Bolivia diversas situaciones económicas pueden
+            afectar el abastecimiento de combustibles,
+            incrementar costos de transporte y modificar
+            el presupuesto de las familias.
+        </p>
+
+        <p>
+            Estos simuladores ayudan a comprender el impacto
+            de dichos factores mediante cálculos automáticos.
+        </p>
+
+    </section>
+
+    <section class="card" id="carburante">
+
+        <h2> Simulador de Abastecimiento</h2>
+
+        <input type="number" id="reservaInicial"
+        placeholder="Reserva inicial (litros)">
+
+        <input type="number" id="consumoDiario"
+        placeholder="Consumo diario">
+
+        <input type="number" id="reabastecimiento"
+        placeholder="Reabastecimiento diario">
+
+        <input type="number" id="nivelCritico"
+        placeholder="Nivel crítico">
+
+        <button onclick="calcularCarburante()">
+            Calcular
+        </button>
+
+        <button onclick="limpiarCarburante()">
+            Limpiar
+        </button>
+
+        <div id="resultadoCarburante"></div>
+
+    </section>
+
+    <section class="card" id="transporte">
+
+        <h2> Simulador de Transporte</h2>
+
+        <input type="number" id="distanciaNormal"
+        placeholder="Distancia normal">
+
+        <input type="number" id="distanciaDesvio"
+        placeholder="Distancia con desvío">
+
+        <input type="number" id="costoKm"
+        placeholder="Costo por kilómetro">
+
+        <input type="number" id="viajes"
+        placeholder="Viajes por semana">
+
+        <button onclick="calcularTransporte()">
+            Calcular
+        </button>
+
+        <button onclick="limpiarTransporte()">
+            Limpiar
+        </button>
+
+        <div id="resultadoTransporte"></div>
+
+    </section>
+
+    <section class="card" id="compras">
+
+        <h2> Simulador de Compras Familiares</h2>
+
+        <input type="number" id="presupuesto"
+        placeholder="Presupuesto familiar">
+
+        <input type="number" id="compra"
+        placeholder="Total de compra">
+
+        <button onclick="calcularCompra()">
+            Calcular
+        </button>
+
+        <button onclick="limpiarCompra()">
+            Limpiar
+        </button>
+
+        <div id="resultadoCompra"></div>
+
+    </section>
+
+    <section class="card" id="casos">
+
+        <h2> Casos de Estudio</h2>
+
+        <article>
+
+            <h3> Carburantes</h3>
+
+            <ul>
+                <li>Reserva inicial: 10000 litros</li>
+                <li>Consumo diario: 1200 litros</li>
+                <li>Reabastecimiento diario: 300 litros</li>
+                <li>Nivel crítico: 2000 litros</li>
+            </ul>
+
+        </article>
+
+        <hr>
+
+        <article>
+
+            <h3> Transporte</h3>
+
+            <ul>
+                <li>Distancia normal: 10 km</li>
+                <li>Distancia con desvío: 16 km</li>
+                <li>Costo por km: 2 Bs</li>
+                <li>Viajes por semana: 5</li>
+            </ul>
+
+        </article>
+
+        <hr>
+
+        <article>
+
+            <h3> Compras</h3>
+
+            <ul>
+                <li>Presupuesto: 500 Bs</li>
+                <li>Compra total: 580 Bs</li>
+            </ul>
+
+        </article>
+
+    </section>
+
+    <section class="card" id="conclusiones">
+
+        <h2> Conclusiones</h2>
+        <p>
+            Los simuladores muestran cómo factores económicos
+            pueden afectar a la población y permiten analizar
+            escenarios de forma práctica e interactiva.
+        </p>
+
+    </section>
+
+    <section class="card" id="creditos">
+
+        <h2> Créditos</h2>
+
+        <p>Nombre: Brian Ariel Garnica Sotes</p>
+        <p>Carrera: Informática</p>
+        <p>Materia: Programación Web I</p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>Proyecto Final - Programación Web I</p>
+
+</footer>
+
+<script src="ccript.js"></script>
+
+</body>
+</html>
